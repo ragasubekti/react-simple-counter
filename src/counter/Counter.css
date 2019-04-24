@@ -1,0 +1,16 @@
+.counter {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-5 {
+  margin: 5px;
+}
+
+.really-big-text {
+  font-size: 64pt;
+}

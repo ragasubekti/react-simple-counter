@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { AwesomeButton } from "react-awesome-button";
+
+import "react-awesome-button/dist/styles.css";
+import "./Counter.css";
 
 export class Counter extends Component {
   constructor() {
@@ -23,10 +27,15 @@ export class Counter extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.counter}</h1>
-        <button onClick={this.onButtonIncrementPressed}>Increment</button>
-        <button onClick={this.onButtonDecrementPressed}>Decrement</button>
+      <div className="counter">
+        <h1 className="really-big-text">{this.state.counter}</h1>
+        <AwesomeButton type="primary" onPress={this.onButtonIncrementPressed}>
+          Increment
+        </AwesomeButton>
+        <div className="margin-5" />
+        <AwesomeButton type="primary" onPress={this.onButtonDecrementPressed}>
+          Decrement
+        </AwesomeButton>
       </div>
     );
   }
